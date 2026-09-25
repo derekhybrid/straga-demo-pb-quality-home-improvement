@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P&amp;B Quality Home Improvement | Hammonton, NJ</title>
+<meta name="description" content="P&amp;B Quality Home Improvement — family-owned general contractor, Hammonton, NJ, since 2012.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --red:#e2372a;
+    --red-dark:#b82920;
+    --black:#141414;
+    --white:#ffffff;
+    --paper:#f4f2ee;
+    --line:#e3ddd2;
+    --muted:#6b6560;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--paper);color:var(--black);font-family:'Inter',Arial,sans-serif;}
+  a{color:inherit;text-decoration:none;}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 24px;}
+  .display{font-family:'Anton',Impact,sans-serif;font-weight:400;letter-spacing:0.01em;}
+  .demo-note{background:var(--red);color:#fff;text-align:center;padding:10px 16px;font-size:0.85rem;font-weight:600;}
+
+  header{padding:18px 0;border-bottom:3px solid var(--black);background:var(--white);}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;}
+  .brand{display:flex;align-items:center;gap:12px;}
+  .brand .mark{width:46px;height:46px;flex-shrink:0;}
+  .brand-text{line-height:1;}
+  .brand-text .top{
+    font-family:'Anton',Impact,sans-serif;color:var(--red);font-size:1.3rem;
+    -webkit-text-stroke:1px var(--black);letter-spacing:0.01em;
+  }
+  .brand-text .bottom{
+    font-family:'Anton',Impact,sans-serif;color:var(--black);font-size:0.72rem;letter-spacing:0.05em;
+  }
+  nav a{margin-left:24px;color:var(--black);font-size:0.9rem;font-weight:600;}
+  nav a:hover{color:var(--red);}
+  .header-cta{background:var(--black);color:#fff;padding:10px 20px;border-radius:2px;font-weight:800;font-size:0.9rem;}
+
+  .hero{padding:64px 0 54px;background:var(--black);color:#fff;position:relative;overflow:hidden;}
+  .hero::before{
+    content:"";position:absolute;inset:0;
+    background:repeating-linear-gradient(-6deg, rgba(226,55,42,0.08) 0 40px, transparent 40px 80px);
+  }
+  .hero .wrap{position:relative;display:grid;grid-template-columns:1.1fr 0.9fr;gap:48px;align-items:center;}
+  .est-badge{
+    display:inline-flex;align-items:center;gap:8px;
+    background:var(--red);color:#fff;padding:7px 14px;
+    font-family:'Anton',Impact,sans-serif;font-size:0.78rem;letter-spacing:0.04em;
+    margin-bottom:20px;
+  }
+  h1{font-family:'Anton',Impact,sans-serif;font-weight:400;font-size:clamp(2.1rem,4.6vw,3.1rem);line-height:1.08;margin:0 0 18px;text-transform:uppercase;}
+  h1 span{color:var(--red);}
+  .lede{color:#d8d5d0;font-size:1.05rem;line-height:1.6;max-width:44ch;margin:0 0 30px;}
+  .cta-row{display:flex;gap:14px;flex-wrap:wrap;}
+  .btn{padding:14px 24px;border-radius:2px;font-weight:800;font-size:0.92rem;display:inline-flex;gap:8px;align-items:center;font-family:'Anton',Impact,sans-serif;letter-spacing:0.02em;text-transform:uppercase;}
+  .btn-primary{background:var(--red);color:#fff;}
+  .btn-primary:hover{background:var(--red-dark);}
+  .btn-outline{border:2px solid #fff;color:#fff;}
+  .btn-outline:hover{background:#fff;color:var(--black);}
+  .hero-mark{width:100%;max-width:320px;margin:0 auto;}
+
+  section{padding:64px 0;}
+  .kicker{color:var(--red);font-weight:800;text-transform:uppercase;letter-spacing:0.08em;font-size:0.76rem;margin:0 0 8px;}
+  h2{font-family:'Anton',Impact,sans-serif;font-weight:400;font-size:2rem;margin:0 0 14px;text-transform:uppercase;}
+  .section-head{max-width:58ch;margin-bottom:38px;}
+  .section-head p{color:var(--muted);line-height:1.6;}
+
+  .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:2px;background:var(--black);border:2px solid var(--black);}
+  .svc{background:#fff;padding:24px;}
+  .svc h3{margin:0 0 8px;font-size:1.02rem;font-weight:800;}
+  .svc p{margin:0;color:var(--muted);font-size:0.88rem;line-height:1.5;}
+  .svc .roof{width:26px;height:20px;margin-bottom:12px;}
+
+  .trust{background:var(--black);color:#fff;}
+  .trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center;}
+  .trust-item b{display:block;font-family:'Anton',Impact,sans-serif;font-size:1.7rem;color:var(--red);margin-bottom:4px;}
+  .trust-item span{color:#bcb8b2;font-size:0.82rem;text-transform:uppercase;letter-spacing:0.04em;}
+
+  .about .grid{display:grid;grid-template-columns:0.9fr 1.1fr;gap:50px;align-items:center;}
+  blockquote{font-family:'Anton',Impact,sans-serif;font-weight:400;font-size:1.6rem;line-height:1.4;margin:0 0 16px;text-transform:uppercase;}
+  cite{color:var(--red);font-style:normal;font-size:0.9rem;font-weight:700;}
+  .panel{
+    aspect-ratio:16/10;background:#fff;border:2px solid var(--black);
+    display:flex;align-items:center;justify-content:center;
+  }
+  .panel svg{width:70%;}
+
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;}
+  .info-block h3{font-family:'Anton',Impact,sans-serif;font-size:0.85rem;letter-spacing:0.05em;color:var(--red);margin:0 0 16px;text-transform:uppercase;}
+  .info-block ul{list-style:none;margin:0;padding:0;}
+  .info-block li{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--line);font-size:0.94rem;color:var(--muted);}
+  .info-block li span:last-child{color:var(--black);font-weight:700;}
+
+  footer{background:var(--black);color:#a9a49d;padding:26px 0;font-size:0.85rem;}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;}
+
+  @media (max-width:760px){
+    nav{display:none;}
+    .hero .wrap,.about .grid,.contact-grid{grid-template-columns:1fr;}
+    .trust-grid{grid-template-columns:1fr 1fr;}
+  }
+</style>
+</head>
+<body>
+
+<div class="demo-note">Free concept site built for P&amp;B Quality Home Improvement by Straga Hybrid Marketing — styled after their own logo — not yet live.</div>
+
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <svg class="mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6 44 L50 12 L94 44 Z" fill="#141414"/>
+        <rect x="14" y="44" width="72" height="40" fill="#141414"/>
+        <text x="50" y="70" font-family="Anton,Impact,sans-serif" font-size="20" fill="#fff" text-anchor="middle">P&amp;B</text>
+      </svg>
+      <div class="brand-text">
+        <div class="top">P&amp;B Quality</div>
+        <div class="bottom">HOME IMPROVEMENT</div>
+      </div>
+    </div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="header-cta" href="tel:+16094025334">(609) 402-5334</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="est-badge">Family-Owned Since 2012 &middot; Hammonton, NJ</span>
+      <h1>Home improvement done the <span>right</span> way.</h1>
+      <p class="lede">Roofing, siding, remodeling, flooring, windows and doors — one licensed, BBB-accredited crew handling your project from the first estimate to the final walkthrough.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="tel:+16094025334">Free Estimate</a>
+        <a class="btn btn-outline" href="#services">Our Work</a>
+      </div>
+    </div>
+    <svg class="hero-mark" viewBox="0 0 200 170" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 82 L100 22 L190 82 Z" fill="#141414" stroke="#e2372a" stroke-width="3"/>
+      <rect x="26" y="82" width="148" height="78" fill="#141414" stroke="#e2372a" stroke-width="3"/>
+      <text x="100" y="120" font-family="Anton,Impact,sans-serif" font-size="34" fill="#fff" text-anchor="middle">P&amp;B</text>
+      <text x="100" y="145" font-family="Anton,Impact,sans-serif" font-size="13" fill="#e2372a" text-anchor="middle" letter-spacing="1">QUALITY</text>
+    </svg>
+  </div>
+</section>
+
+<section class="trust">
+  <div class="wrap trust-grid">
+    <div class="trust-item"><b>2012</b><span>Founded</span></div>
+    <div class="trust-item"><b>2018</b><span>BBB Accredited</span></div>
+    <div class="trust-item"><b>NJ</b><span>Licensed Contractor</span></div>
+    <div class="trust-item"><b>Free</b><span>On-Site Estimates</span></div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="kicker">What we do</p>
+      <h2>One call covers the whole project.</h2>
+      <p>From a single room to the full exterior, P&amp;B handles it without bouncing you between five different contractors.</p>
+    </div>
+    <div class="services-grid">
+      <div class="svc"><h3>Roofing</h3><p>Repairs, replacements, and storm damage work.</p></div>
+      <div class="svc"><h3>Siding</h3><p>Full siding replacement and exterior refresh.</p></div>
+      <div class="svc"><h3>Remodeling</h3><p>Kitchens, bathrooms, and full interior updates.</p></div>
+      <div class="svc"><h3>Flooring</h3><p>Installation and replacement, room by room or whole house.</p></div>
+      <div class="svc"><h3>Windows &amp; Doors</h3><p>Energy-efficient replacements, professionally installed.</p></div>
+      <div class="svc"><h3>General Contracting</h3><p>Bigger projects, coordinated start to finish.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap grid">
+    <div>
+      <p class="kicker">Since 2012</p>
+      <blockquote>"We've been doing this in Hammonton long enough that half our calls are neighbors who already know somebody we worked for."</blockquote>
+      <cite>— P&amp;B Quality Home Improvement</cite>
+    </div>
+    <div class="panel">
+      <svg viewBox="0 0 200 170" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 82 L100 22 L190 82 Z" fill="#141414"/>
+        <rect x="26" y="82" width="148" height="78" fill="#141414"/>
+        <text x="100" y="120" font-family="Anton,Impact,sans-serif" font-size="30" fill="#fff" text-anchor="middle">P&amp;B</text>
+        <text x="100" y="144" font-family="Anton,Impact,sans-serif" font-size="12" fill="#e2372a" text-anchor="middle" letter-spacing="1">QUALITY</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap contact-grid">
+    <div class="info-block">
+      <h3>Service Area</h3>
+      <ul>
+        <li><span>Based in</span><span>Hammonton, NJ</span></li>
+        <li><span>Serving</span><span>Atlantic County &amp; South Jersey</span></li>
+        <li><span>Estimates</span><span>Free, on-site</span></li>
+      </ul>
+    </div>
+    <div class="info-block">
+      <h3>Contact</h3>
+      <ul>
+        <li><span>Phone</span><span>(609) 402-5334</span></li>
+        <li><span>Address</span><span>2125 Elwood Rd, Hammonton, NJ</span></li>
+        <li><span>Founded</span><span>2012</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>&copy; P&amp;B Quality Home Improvement, LLC &middot; Hammonton, NJ</div>
+    <div>Concept site by Straga Hybrid Marketing</div>
+  </div>
+</footer>
+
+</body>
+</html>
